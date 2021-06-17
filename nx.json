@@ -1,5 +1,5 @@
 {
-	"npmScope": "nativescript",
+	"npmScope": "carployee",
 	"affected": {
 		"defaultBase": "master"
 	},
@@ -21,6 +21,9 @@
 			"tags": []
 		},
 		"all": {
+			"tags": []
+		},
+		"openapp": {
 			"tags": []
 		}
 	},

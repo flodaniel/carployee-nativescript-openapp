@@ -1,0 +1,30 @@
+{
+	"name": "@carployee/openapp",
+	"version": "1.0.0",
+	"description": "A NS8 version of https://github.com/ludwiktrammer/nativescript-open-app",
+	"main": "index",
+	"typings": "index.d.ts",
+	"nativescript": {
+		"platforms": {
+			"ios": "6.0.0",
+			"android": "6.0.0"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NativeScript/plugins.git"
+	},
+	"keywords": [
+		"NativeScript",
+		"JavaScript",
+		"TypeScript",
+		"iOS",
+		"Android"
+	],
+	"author": {
+		"name": "Firetrip"
+	},
+	"license": "Apache-2.0",
+	"readmeFilename": "README.md",
+	"bootstrapper": "@nativescript/plugin-seed"
+}

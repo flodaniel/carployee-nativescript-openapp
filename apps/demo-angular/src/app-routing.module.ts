@@ -5,8 +5,9 @@ import { NativeScriptRouterModule } from '@nativescript/angular';
 import { HomeComponent } from './home.component';
 
 const routes: Routes = [
-   { path: '', redirectTo: '/home', pathMatch: 'full' },
-   { path: 'home', component: HomeComponent }
+	{ path: '', redirectTo: '/home', pathMatch: 'full' },
+	{ path: 'home', component: HomeComponent },
+	{ path: 'openapp', loadChildren: () => import('./plugin-demos/openapp.module').then((m) => m.OpenappModule) },
 ];
 
 @NgModule({

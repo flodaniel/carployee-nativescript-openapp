@@ -86,6 +86,47 @@
 					}
 				}
 			}
+		},
+		"openapp": {
+			"projectType": "library",
+			"schematics": {},
+			"root": "packages/openapp",
+			"sourceRoot": "packages/openapp",
+			"architect": {
+				"build": {
+					"builder": "@nrwl/node:package",
+					"options": {
+						"outputPath": "dist/packages/openapp",
+						"tsConfig": "packages/openapp/tsconfig.json",
+						"packageJson": "packages/openapp/package.json",
+						"main": "packages/openapp/index.ts",
+						"assets": [
+							"packages/openapp/*.md",
+							"packages/openapp/index.d.ts",
+							"LICENSE",
+							{
+								"glob": "**/*",
+								"input": "packages/openapp/platforms/",
+								"output": "./platforms/"
+							}
+						]
+					}
+				},
+				"build.all": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx run openapp:build", "node tools/scripts/build-finish.ts openapp"],
+						"parallel": false
+					}
+				},
+				"focus": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages openapp"],
+						"parallel": false
+					}
+				}
+			}
 		}
 	},
 	"cli": {

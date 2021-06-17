@@ -5,7 +5,9 @@
 	"repository": "<fill-your-repository-here>",
 	"dependencies": {
 		"nativescript-theme-core": "file:../../node_modules/nativescript-theme-core",
-		"@nativescript/core": "file:../../node_modules/@nativescript/core"
+		"@nativescript/core": "file:../../node_modules/@nativescript/core",
+		"@nativescript/openapp": "file:../../packages/openapp",
+		"@carployee/openapp": "file:../../packages/openapp"
 	},
 	"devDependencies": {
 		"@nativescript/android": "7.0.1",
