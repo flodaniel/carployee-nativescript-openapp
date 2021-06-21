@@ -1,12 +1,12 @@
 import { OpenappCommon } from './common';
-import * as utils from '@nativescript/core/utils/';
+import { Utils } from '@nativescript/core';
 
 export class OpenApp extends OpenappCommon {
 	public static open(appID, storeFallback, appleStoreId) {
 		if (storeFallback === void 0) {
 			storeFallback = true;
 		}
-		var context = utils.ad.getApplicationContext();
+		var context = Utils.ad.getApplicationContext();
 		var Intent = android.content.Intent;
 		var intent = context.getPackageManager().getLaunchIntentForPackage(appID);
 		if (intent) {

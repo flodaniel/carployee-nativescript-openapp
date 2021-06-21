@@ -1,6 +1,6 @@
 {
 	"name": "@carployee/openapp",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A NS8 version of https://github.com/ludwiktrammer/nativescript-open-app",
 	"main": "index",
 	"typings": "index.d.ts",
